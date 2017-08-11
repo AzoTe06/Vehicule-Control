@@ -53,14 +53,14 @@ function Menu.updateSelection()
 		else
 			Menu.selection = 0
 		end		
-		PlaySound(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", 0, 0, 1)
+		PlaySound(-1, "NAV_UP_DOWN", "HUD_FRONTEND_DEFAULT_SOUNDSET", 0, 0, 1)
 	elseif IsControlJustPressed(1, Keys["TOP"]) then
 		if(Menu.selection > 0)then
 			Menu.selection = Menu.selection -1
 		else
 			Menu.selection = Menu.buttonCount-1
 		end	
-		PlaySound(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", 0, 0, 1)
+		PlaySound(-1, "NAV_UP_DOWN", "HUD_FRONTEND_DEFAULT_SOUNDSET", 0, 0, 1)
 	elseif IsControlJustPressed(1, Keys["NENTER"])  then
 		MenuCallFunction(Menu.GUI[Menu.selection +1]["func"], Menu.GUI[Menu.selection +1]["args"])
 		PlaySound(-1, "SELECT", "HUD_FRONTEND_DEFAULT_SOUNDSET", 0, 0, 1)
