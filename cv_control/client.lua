@@ -229,7 +229,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
 		if IsPedInAnyVehicle(GetPlayerPed(-1)) then
-        if IsControlJustPressed(1, 170) then
+        if IsControlJustPressed(1, 244) then
             PersonnalMenu() -- Menu to draw
             Menu.hidden = not Menu.hidden -- Hide/Show the menu
         end
